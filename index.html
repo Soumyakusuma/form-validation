@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+
+    #valid{
+        padding:20px;
+        margin:40px;
+        color:darkblue;
+        box-sizing: border-box;
+        border: 2px solid green;
+        font-size: 15px;
+    }
+    form {
+    margin: 0 auto;
+    width: 600px;
+    padding: 30px;
+   }
+   #login{
+    color: darkred;
+    background-color: blanchedalmond;
+    border: 2px solid;
+    border-style: dashed;
+    font-size: 20px;
+   }
+   #course{
+
+    margin-right:10px ;
+    font-size: 15px;
+    color: darkblue;
+    padding: 20px;
+   }
+
+</style>
+<body>
+ <h1> STUDENT LOGIN</h1>
+ <h3>Malla Reddy Engineering College</h3>
+ <div id="valid" >
+ <form action="/action.php" name="myform" onsubmit="return validates()" >
+ <p>Name:<input type="text" name="name" placeholder="Enter your name" size="50"></p>
+ <span id="valid_name"></span>
+ <br>
+ <p>password:<input type="password" name="password" placeholder="enter the password" size="50"></p>
+ <span id="valid_password"></span>
+ <br>
+ <p>confirm Password:<input type="password" name="reenter" placeholder="re enter the password" size="50"></p>
+ <p id="reenter" style="color: red;"></p>
+ <br>
+ <p>Email Id:<input type="text" name="email" placeholder="enter the email id" size="50"></p>
+ <br>
+ <span id="email"></span>
+ <p>Phone Number:<input type="text" name="phone" placeholder="enter the Phone Number" size="50"></p>
+ <span id="phone"></span>
+ <br>
+ <p id="course">select your course:<select type="text" name="Subject">
+       <option>Select</option>
+        <option>BTECH</option>
+        <option>BBA</option>
+        <option>BCA</option>
+        <option>B.COM</option>
+    </select>
+</p>
+<span id="course"></span>
+ <input type="submit" value="Login" id="login">
+ </form>
+ </div>
+ <script src="script.js"></script>
+ 
+</body>
+</html>
